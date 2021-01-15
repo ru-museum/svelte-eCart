@@ -157,7 +157,7 @@
 	let footer = {
 
       info  : 1,  // メインページに表示しない： 0(デフォルト)　表示する： 1
-      image : 'footer_image.jpg' // ショップ画像（imgフォルダ内に保存）
+      image : 'sample-admin.png' // ショップ画像（imgフォルダ内に保存）
 
 	};
 
