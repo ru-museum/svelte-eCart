@@ -1,4 +1,3 @@
-
    // 消費税の設定
    let tax = "8";    // 消費税　％
    let tax_frac = 0; // 税額端数処理設定(業者により指定自由)：　四捨五入-[0] 切り上げ-[1] 切り捨て-[2]
@@ -33,7 +32,7 @@
   	{
 		id: '1',                      // ID 番号　  
 		code     : 'A-1A',            // 管理番号:必要の無い場合は空欄
-		name     : 'ミカン',           // 商品名
+		name     : 'トマトA',           // 商品名
 		subtitle : '糖度１０度を越えました', // サブ-タイトル
 		price    : 3800,              // 商品価格:円
 		gram     : "3kg",             // 量目表示
@@ -41,7 +40,7 @@
 		sale     : 0,                 // SALE 表示
 		shipping : 0,                 // 送料 [非表示]-0　[無料]-1
 		sold     : 0,                 // 完売表示　[非表示]-0　[完売]-1 
-		img      : 'sample01.jpg',    // 商品画像
+		img      : 'product001.jpg',    // 商品画像
       clips:[ // msg 部分が空欄の場合は表示されません
          {msg:"本日限り", color:primary},
          {msg:"残り20k", color:secondary},
@@ -58,7 +57,7 @@
 	{
 		id: '2',
 		code: 'A-2B',
-		name: 'サクランボ',
+		name: 'トマトB',
 		subtitle: '毎日収穫直送しています',
 		price: 2000,
 		gram: "1kg",
@@ -66,7 +65,7 @@
 		sale: 1,
 		shipping: 1,
 		sold: 1,
-		img: 'sample02.jpg',
+		img: 'product002.jpg',
       clips:[
          {msg:"本日限り", color:primary},
          {msg:"残り些少", color:danger},
@@ -83,7 +82,7 @@
 	{
 		id: '3',
 		code: 'B-2A',
-		name: '旬野菜詰合せセット:A',
+		name: 'トマト詰合せセット:A',
 		subtitle : '今年初収穫です',
 		price: 340,
 		gram: "300g",
@@ -91,7 +90,7 @@
 		sale: 1,
 		shipping: 1,
 		sold:0,
-		img: 'sample03.jpg',
+		img: 'product003.jpg',
       clips:[
          {msg:"本日限り", color:primary},
          {msg:"送料無料", color:success},
