@@ -1,5 +1,3 @@
-
-
    // 運営者情報
 	let user = {
 	
@@ -16,22 +14,25 @@
    // 商品タイトル背景色変更例： background-color:#6a0080;color:#ffffff;
 	let setting = {
 	
-      top_image : "logo-smp02.jpg", // メインページ・トップ画像　600x140
+      top_image : "logo-smp02.jpg", // メインページ・トップ画像　600x140程度
       title_back: "background-color:#6a0080;color:;" 
       
 	};
 
-   // 挿入テキスト
-	let message = {
+   /**
+    *  MAIN ページ・トップ挿入テキスト 
+    *  ● 必要の無い場合は、空（""）として下さい 
+    *  ● 行を追加出来ます 
+    */
+	let message = [
 	
-      msg1: "M1:販売カート",
-      msg2: "M2:農業者向けテンプレート",
-      msg3: "M3:",
-      msg4: "M4:",
-      msg5: "M5:",
-      msg6: "M6:"
+      { msg: "農業者向け販売カート"},
+      { msg: "・これはデモ版テンプレートです。"},
+      { msg: "・オープンソースとして <a href='https://github.com/ru-museum/svelte-eCart' target='_blank'>GitHub</a> にて公開しています。"},
+      { msg: "・IT に詳しくない方でも簡単に設置出来ます。"},
+      { msg: "・画像は全てフリー画像を使用しています。"}
 
-	};
+	];
 
    // 注文メール設定
 	let order_mail = {
