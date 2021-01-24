@@ -34,7 +34,7 @@ cd svelte-app
 **! could not find commit hash for master** のエラーが表示された場合は、branch 名を指定して下さい(**#main**)。
 
 ```
-npx degit ru-museum/svelte-ie11-boilerplate#main svelte-app
+npx degit ru-museum/svelte-eCart#main svelte-app
 ```
 
 - デフォルト branch 名は、**master** から **main** へ変更されています。  
