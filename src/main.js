@@ -5,7 +5,8 @@ import 'es6-shim'; // IE11対応
 import { onMount } from 'svelte';	
 	window.onMount = onMount;
 
-// import {fetch as fetchPolyfill} from 'whatwg-fetch'; // IE11対応fetch
+// IE11対応: fetch
+// import {fetch as fetchPolyfill} from 'whatwg-fetch';
 // 	window.fetchPolyfill = fetchPolyfill;
 
 const app = new App({
