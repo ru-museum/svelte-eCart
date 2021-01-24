@@ -1,7 +1,6 @@
 
 <script>
 
-   // export let name;
    export let creator;
    export let presets;
 
@@ -15,15 +14,10 @@
 
    // PAGES
    import Settings from './pages/Settings.svelte';
-   // import Help     from './pages/Help.svelte';
    import About    from './pages/About.svelte';
    import AboutLaw from './pages/AboutLaw.svelte';
-   // import Privacy  from './pages/Privacy.svelte';
    import DataEditor from './pages/DataEditor.svelte';
-   
    import Infomations from './pages/Infomations.svelte';
-
-   // import Work     from './pages/Work.svelte';
 
    // ROUTER 
    var routes = {};
@@ -60,15 +54,10 @@
    route('/',           () => { page = Home;     });
    route('/home',       () => { page = Home;     });
    route('/settings',   () => { page = Settings;  });
-   // route('/help',       () => { page = Help;     });
    route('/about',      () => { page = About;    });
    route('/about-law',  () => { page = AboutLaw; });
    route('/data-editor',() => { page = DataEditor;});
-   // route('/privacy',    () => { page = Privacy;  });
-   
-   // TEST
    route('/infomations', () => { page = Infomations; });
-   // route('/work',       () => { page = Work;     });
 
    let y = 0; // スクロール位置：Y座標初期値 
    // Top に戻る 	
@@ -122,11 +111,8 @@
 {/if}
 
 
-<!-- MAIN 表示  {...user}-->
+<!-- MAIN 表示 -->
 <Navbar {creator}/>
-   <!-- HOME -->
+	<!-- HOME -->
 	<svelte:component this={page} date={presets.date} />
-
 <Footer year={presets.year} />
-
-
