@@ -7,6 +7,7 @@
 - この Svelte apps は [https://github.com/sveltejs/template](https://github.com/sveltejs/template) に基づいています。
 - OSへの依存の無いクロスプラットフォーム（Linux, Android, Web, Windows, iOS, Mac 等）で動作します。
 - IE11 に対応しています。
+- UI には [Material Components for the web](https://github.com/material-components/material-components-web/) を使用しています。
 
 ### 【注意】
 - この バージョンは、IE11 への対応と不慣れな方でもローカル環境で容易に扱える様に作られています。　
