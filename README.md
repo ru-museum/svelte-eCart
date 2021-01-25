@@ -5,7 +5,8 @@
 # 特徴
 - この Svelte apps は [https://github.com/sveltejs/template](https://github.com/sveltejs/template) に基づいています。
 - 特に農業者による農作物の販売向けに制作されています。
-- クロスプラットフォームとして Linux, Windows, iOS 等何れの環境においても動作します。 
+- クロスプラットフォームとして Linux, Windows, iOS 等何れの環境においても動作します。
+- UI として Google社の [Material Components](https://github.com/material-components/material-components-web) を使用しています。 
 - IE11 への対応とWEB技術に疎遠な方にも容易に導入出来るよう最適化されています。  
 　※ 最新技術を採り入れたものは別バージョンとして予定しています。
 
