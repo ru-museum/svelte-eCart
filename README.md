@@ -11,7 +11,7 @@
 　※ 最新技術を採り入れたものは別バージョンとして予定しています。
  
 # Demo
-- 以下でテンプレートをご覧頂けます（**/docs** を参照しています) 
+- 以下で公開用テンプレートをご覧頂けます（**/docs** を参照しています) 
  
 　　[GitHub Pages: svelte-eCart](https://ru-museum.github.io/svelte-eCart/)  
 　　https://ru-museum.github.io/svelte-eCart/ 
