@@ -9,6 +9,12 @@
 - UI として Google社の [Material Components](https://github.com/material-components/material-components-web) を使用しています。 
 - IE11 への対応とWEB技術に疎遠な方にも容易に導入出来るよう最適化されています。  
 　※ 最新技術を採り入れたものは別バージョンとして予定しています。
+ 
+# Demo
+- 以下でテンプレートをご覧頂けます（**/docs** を参照しています) 
+ 
+　　[GitHub Pages: svelte-eCart](https://ru-museum.github.io/svelte-eCart/)  
+　　https://ru-museum.github.io/svelte-eCart/ 
 
 # インストール
 
