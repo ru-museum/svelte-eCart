@@ -17,7 +17,13 @@
      title="{user.shop}" 
      class="logo-img">
 <!--MESSAGE -->
-<div class="mdc-typography--headline4 shop-title">{message[0].msg}</div>
+<div class="mdc-typography--headline4 shop-title">
+   {#if message[0].msg === "農業者向け販売カート" }
+      {@html message[0].msg} v.{$version}
+   {:else}
+      {@html message[0].msg}
+   {/if}
+</div>
    {#each message as {msg}, i}
       {#if i > 0 }
          <div class="mdc-typography--subtitle2 shop-title">{@html msg}</div>
@@ -382,6 +388,7 @@
 <script>
 
    let oW = 0; // 画面サイズ
+   import { version } from '../components/stores.js';
 
    export let date; 
    // MATERIAL ICONS - SVG
