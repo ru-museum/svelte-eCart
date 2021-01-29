@@ -28,7 +28,7 @@
     */
 	let message = [
 	
-      { msg: "農業者向け販売カート: v.0.0.1α"},
+      { msg: "農業者向け販売カート: v.0.0.2"},
       { msg: "・これはデモ版テンプレートです。"},
       { msg: "・オープンソースとして <a href='https://github.com/ru-museum/svelte-eCart' target='_blank'>GitHub</a> にて公開しています。"},
       { msg: "・IT に詳しくない方でも簡単に設置出来ます。"},
