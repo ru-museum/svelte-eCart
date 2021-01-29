@@ -8,6 +8,7 @@ import svg from 'rollup-plugin-svg-import';
 import postcss from 'rollup-plugin-postcss';
 import autoPreprocess from 'svelte-preprocess';
 import { scss } from 'svelte-preprocess'
+import css from 'rollup-plugin-css-only';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -33,11 +34,11 @@ export default {
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file — better for performance
-			css: css => {
-				css.write('public/bundle.css');
-			}
+			// css: css => {
+			// 	css.write('public/bundle.css');
+			// }
 		}),
-
+      css({ output: 'public/bundle.css' }),
       svg({ stringify: true }),
       postcss(),
 
