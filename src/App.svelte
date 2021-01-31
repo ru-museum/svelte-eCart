@@ -5,7 +5,7 @@
     * 管理用フラグ：メニューの表示
     *   デフォルトは　管理用: 1 公開用： 0 
     */  
-   let administration = 0;
+   let administration = 1;
 
    export let creator;
    export let presets;
