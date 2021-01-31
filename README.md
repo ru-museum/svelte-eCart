@@ -4,6 +4,8 @@
  
 # 特徴
 - この Svelte apps は [https://github.com/sveltejs/template](https://github.com/sveltejs/template) に基づいています。
+    - **sveltejs/template** 最新版(Rollup 2.x, rollup-plugin-svelte 7.x)に対応しました(2021-01-31)。
+    
 - 特に農業者による農作物の販売向けに制作されています。
 - クロスプラットフォームとして Linux, Windows, iOS 等何れの環境においても動作します。 
 - UI として Google社の [Material Components](https://github.com/material-components/material-components-web) を使用しています。 
@@ -65,10 +67,10 @@ npm run dev
 
 3. 公開用にビルドします。
 
-
 ```
 npm run build
 ```
+- ビルド後のバンドルファイルの生成場所は **public/build** フォルダに変更されています。  
 
 ###  　管理用と公開用とのビルド方法
 
@@ -76,7 +78,7 @@ npm run build
   　　**let administration  = 1 ;**  // デフォルト値  
 　　管理用：**1**、公開用：**0** となっています。  
 
-- ビルド後バンドルファイル名を各々公開用は **bundle.js**、管理用は  **bundle-admin.js** とします。  
+- **public/build** フォルダ内のバンドルファイル名を公開用は **bundle.js**、管理用は  **bundle-admin.js** とします。  
  ※ 管理用と公開用との違いは、メニューの表示・非表示のみです。
 
 
