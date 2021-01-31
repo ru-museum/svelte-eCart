@@ -81,6 +81,11 @@ npm run build
 - **public/build** フォルダ内のバンドルファイル名を公開用は **bundle.js**、管理用は  **bundle-admin.js** とします。  
  ※ 管理用と公開用との違いは、メニューの表示・非表示のみです。
 
+#### 【注意】
+- **build** 時に下記の **warning** が表示されるのは、**svelte** の **plugin** としてではなく外部からの読込となっている為で問題はありません。
+```
+(!) Plugin svelte: '*変数名*' is not defined
+```
 
 # 公開
 
