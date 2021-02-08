@@ -1,6 +1,7 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "svelte-eCart",
+  "description": "A Svelte app for shopping cart",
+  "version": "0.0.2",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
