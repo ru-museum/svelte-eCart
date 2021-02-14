@@ -1,5 +1,4 @@
 import App from './App.svelte';
-import 'es6-shim'; // IE11対応
 
 // GLOBAL
 import { onMount } from 'svelte';	
