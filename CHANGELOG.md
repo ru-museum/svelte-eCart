@@ -1,6 +1,9 @@
 # svelte-eCart changelog
 
 ## 0.1.0
+2021-03-31  
+- 各パッケージのバージョンをアップデートしました（package.json）。
+
 2021-02-14  
 - 非推奨となったパッケージ等を削除・修正しました（@babel/polyfill, node-sass 等）。
 
