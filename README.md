@@ -33,7 +33,7 @@ npx degit ru-museum/svelte-eCart svelte-app
 cd svelte-app
 ```
 
-### 【注意】
+### 【注意: 1】
 ```
 ! could not find commit hash for master
 ```
@@ -50,6 +50,25 @@ npx degit ru-museum/svelte-eCart#main svelte-app
 　　参照 ⇒ [github / renaming: Renaming the default branch from master](https://github.com/github/renaming)
 
 - 構築するには [Node.js](https://nodejs.org/) のインストールが必要です。
+
+### 【注意: 2】（2021-06-24）
+- v. 3.38.3 において下記のエラーが表示される場合は以下を参照して下さい。  
+**複数の同時記述は不可**となっています。 
+
+- Throw compiler error when <code>:global()</code> contains multiple selectors (<a href="https://github.com/sveltejs/svelte/issues/5907">#5907</a>)
+- Fix <code>:global(...):some-pseudoclass</code> selectors not being seen as global (<a href="https://github.com/sveltejs/svelte/issues/6306">#6306</a>)
+- disallow multiple selectors inside :global() (<a href="https://github.com/sveltejs/svelte/issues/6428">#6428</a>)
+
+```
+[!] (plugin svelte) ValidationError: :global(...) must contain a single selector
+  ...
+   :global(app, body, html) {
+   ^
+```
+- 回避するには以下の様に分割して記述して下さい。
+```
+:global(app),:global(body),:global(html){ 
+```
 
 # 構築
 
