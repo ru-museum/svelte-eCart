@@ -69,10 +69,6 @@ npx degit ru-museum/svelte-eCart#main svelte-app
 ```
 :global(app),:global(body),:global(html){ 
 ```
-或いは、
-```
-:global(:where(app, body, html)) {
-```
 
 # 構築
 
