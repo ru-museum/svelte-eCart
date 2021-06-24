@@ -68,6 +68,10 @@ npx degit ru-museum/svelte-eCart#main svelte-app
 - 回避するには以下の様に分割して記述して下さい。
 ```
 :global(app),:global(body),:global(html){ 
+
+或いは、
+
+:global(:where(app, body, html)) {
 ```
 
 # 構築
