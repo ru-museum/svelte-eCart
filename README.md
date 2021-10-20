@@ -1,6 +1,6 @@
 
 # svelte-eCart
-農業者向け販売カート
+農業生産者向け販売カート
  
 # 特徴
 - この Svelte apps は [https://github.com/sveltejs/template](https://github.com/sveltejs/template) に基づいています。
@@ -123,21 +123,3 @@ npm run build
 
 1. カスタマイズ編集後、**/docs** 内のファイルをそのままの構成でサーバーにアップロードして下さい。  
 ※ カスタマイズ編集は「管理者用設定」のヘルプに従って下さい。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
