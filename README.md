@@ -7,7 +7,7 @@
     - **sveltejs/template** 最新版(Rollup 2.x, rollup-plugin-svelte 7.x)に対応しました(2021-01-31)。
     - 非推奨となったパッケージ等を削除・修正しました（@babel/polyfill, node-sass 等）(2021-02-14)。
     
-- 特に農業者による農作物の販売向けに制作されています。
+- 特に農業生産者による農作物の販売向けに制作されています。
 - クロスプラットフォームとして Linux, Windows, iOS, Android(4.4-) 等何れの環境においても動作します。 
 - UI として Google社の [Material Components](https://github.com/material-components/material-components-web) を使用しています。 
 
