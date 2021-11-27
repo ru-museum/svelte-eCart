@@ -78,11 +78,11 @@ npx degit ru-museum/svelte-eCart#main svelte-app
   import marked from 'marked';
          ^
 ```
-- **module 名を明示する必要があります**。
+- **module 名を { } で明示する必要があります**。
 ```
   import { marked } from 'marked';
   
-  marked(text)} OR marked.parse(text)} 
+  marked(text) OR marked.parse(text) 
 ```
 参照 ⇒ [Error: "&#91;name&#93; is not exported by &#91;module&#93;"] (https://rollupjs.org/guide/en/#error-name-is-not-exported-by-module)
 
