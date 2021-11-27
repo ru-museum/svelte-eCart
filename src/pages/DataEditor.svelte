@@ -151,7 +151,7 @@
 	}
 	
 	
-	import marked from 'marked';
+	import { marked } from 'marked';
    // 挿入 Markdonw テキスト
 	let mdtext = "";
    // ヘルプ表示テキスト
