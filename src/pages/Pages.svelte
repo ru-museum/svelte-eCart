@@ -2,13 +2,13 @@
 <script>
    
   export let page;
- 	import md from 'marked';
+  import { marked } from 'marked';
 
 </script>
 
 <div class="main">
 
-   {@html md(user_pages[page-1].content)}
+   {@html marked(user_pages[page-1].content)}
     
 </div>
 
