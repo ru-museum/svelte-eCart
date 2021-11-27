@@ -395,8 +395,8 @@
 	         RemoveCircle, ShoppingCart } from '../material-icons/_index';
 
    import { fade, fly } from 'svelte/transition';
-   import marked        from 'marked';
-	import Loading       from '../components/Loading.svelte';
+   import { marked }    from 'marked';
+   import Loading       from '../components/Loading.svelte';
    import OrderLists    from './OrderLists.svelte';
 
    //　データ読込 
