@@ -1,7 +1,9 @@
 
 # svelte-eCart
 農業生産者向け販売カート
- 
+
+**[ 注意 ]** 　元となる **sveltejs/template** は既に更新が止まり **Public Archive** となり **vite** への移行が促されていますのでご注意下さい。
+
 # 特徴
 - この Svelte apps は [https://github.com/sveltejs/template](https://github.com/sveltejs/template) に基づいています。
     - **sveltejs/template** 最新版(Rollup 2.x, rollup-plugin-svelte 7.x)に対応しました(2021-01-31)。
@@ -85,6 +87,55 @@ npx degit ru-museum/svelte-eCart#main svelte-app
   marked(text) OR marked.parse(text) 
 ```
 参照 ⇒ [Error: "&#91;name&#93; is not exported by &#91;module&#93;"] (https://rollupjs.org/guide/en/#error-name-is-not-exported-by-module)
+
+### 【注意: 4】（2022-12-11）
+* Rollup のバージョンアップ（v.3）に伴い以下のパッケージに不具合が生じています。
+```
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+```
+```
+Could not resolve dependency:
+npm ERR! peer rollup@"1 || 2" from rollup-plugin-css-only@3.1.0
+npm ERR! node_modules/rollup-plugin-css-only
+npm ERR!   dev rollup-plugin-css-only@"^3.1.0" from the root project
+....
+npm ERR! Could not resolve dependency:
+npm ERR! peer rollup@"^2.0.0" from rollup-plugin-terser@7.0.2
+npm ERR! node_modules/rollup-plugin-terser
+npm ERR!   dev rollup-plugin-terser@"^7.0.2" from the root project
+```
+* rollup-plugin-css-only のパッケージ作者は更新終了を宣告しており、解決方法は以下の解説に依っています。  
+Samuele：[How To Update Rollup to Version 3](https://betterprogramming.pub/how-to-update-rollup-to-version-3-10c59139cbeb)
+
+### 【解決方法】
+
+1. パッケージを削除します。
+```
+    npm uninstall rollup-plugin-css-only rollup-plugin-terser
+```
+2. Samuele 氏提供のパッケージをインストールします。
+```
+npm install @el3um4s/rollup-plugin-css-only @el3um4s/rollup-plugin-terser
+```
+3. package.json を編集します。
+```
+  + "type": "module",
+```
+4. rollup.config.js を編集します。
+```
+- import { terser } from 'rollup-plugin-terser';
++ import { terser } from "@el3um4s/rollup-plugin-terser";
+- import css from 'rollup-plugin-css-only';
++ import css from "@el3um4s/rollup-plugin-css-only";
+- import { scss } from 'svelte-preprocess';
++ import pkg from 'svelte-preprocess';
++ const { scss } = pkg;
++ import { spawn } from "child_process";
+
+- server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
++ server = spawn('npm', ['run', 'start', '--', '--dev'], {
+```
 
 # 構築
 
