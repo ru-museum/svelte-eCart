@@ -5,6 +5,8 @@
 **[ 注意 ]** 　元となる **sveltejs/template** は既に更新が止まり **Public Archive** となり **vite** への移行が促されていますのでご注意下さい。
 
 # 特徴
+- **svelte 4** へのバージョンアップがされています（2023-07-25）。  
+
 - この Svelte apps は [https://github.com/sveltejs/template](https://github.com/sveltejs/template) に基づいています。
     - **sveltejs/template** 最新版(Rollup 2.x, rollup-plugin-svelte 7.x)に対応しました(2021-01-31)。
     - 非推奨となったパッケージ等を削除・修正しました（@babel/polyfill, node-sass 等）(2021-02-14)。
